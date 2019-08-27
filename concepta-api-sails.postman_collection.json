@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "concepta-api-sails",
+		"_postman_id": "0f91c90d-1f50-99bd-048d-3c7cddfdbcdf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tickets",
+			"request": {
+				"url": "http://localhost:1337/v1/tickets",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Language\": \"ENG\",\r\n  \"Currency\": \"USD\",\r\n  \"Destination\": \"MCO\",\r\n  \"DateFrom\": \"11/26/2019\",\r\n  \"DateTO\": \"11/29/2019\",\r\n  \"Occupancy\": {\r\n    \"AdultCount\": \"1\",\r\n    \"ChildCount\": \"1\",\r\n    \"ChildAges\": [\"10\"]\r\n  }\r\n}"
+				},
+				"description": "Heroku Tickets"
+			},
+			"response": []
+		}
+	]
+}
