@@ -6,10 +6,10 @@ let rp = require('request-promise');
 let querystring = require('querystring');
 
 // constants
-const PROVIDER_URL = process.env.PROVIDER_API_URL || 'http://travellogix.api.test.conceptsol.com';
-const AUTH_GRANT_TYPE = process.env.AUTH_GRANT_TYPE || 'password';
-const AUTH_USERNAME = process.env.AUTH_USERNAME || 'test1@test2.com';
-const AUTH_PASSWORD = process.env.AUTH_PASSWORD || 'Aa234567!';
+const PROVIDER_URL = process.env.PROVIDER_API_URL;
+const AUTH_GRANT_TYPE = process.env.AUTH_GRANT_TYPE;
+const AUTH_USERNAME = process.env.AUTH_USERNAME;
+const AUTH_PASSWORD = process.env.AUTH_PASSWORD;
 const request = rp.defaults({});
 
 module.exports = {
